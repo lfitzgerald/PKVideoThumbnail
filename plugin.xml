@@ -4,14 +4,14 @@
     id="cordova-plugin-photokandy-video-thumbnail"
     version="2.1.0">
     <engines>
-    	<engine name="cordova" version=">=2.9.0" />
+    	<engine name="cordova" version=">=6.0.1" />
     </engines>
     <name>Video Thumbnail</name>
     <description>Create video thumbnails from video files; iOS 6+, Android 2.x+</description>
     <author>Kerri Shotts</author>
     <keywords>video, thumbnail, ios, android</keywords>
     <license>MIT</license>
-    <dependency id="cordova-plugin-file" version="^4.0.0"/>
+    <dependency id="cordova-plugin-file" version=">=4.0.0"/>
     <js-module src="www/PKVideoThumbnail.js" name="PKVideoThumbnail">
         <clobbers target="window.PKVideoThumbnail" />
     </js-module>
@@ -28,7 +28,7 @@
     </platform>
     <platform name="android">
         <!-- android-specific elements -->
-        <config-file target="config.xml" parent="/*">
+        <config-file target="res/xml/config.xml" parent="/*">
             <feature name="PKVideoThumbnail">
                 <param name="android-package" value="com.photokandy.PKVideoThumbnail.PKVideoThumbnail" />
             </feature>
